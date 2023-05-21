@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui gui-private
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,10 +15,12 @@ QXLSX_SOURCEPATH=./QXlsx/source/  # current QXlsx source path is ./source/
 include(./QXlsx/QXlsx.pri)
 
 SOURCES += \
+    doc_2_txt/docx_2_txt.cpp \
     main.cpp \
     office_tool.cpp
 
 HEADERS += \
+    doc_2_txt/docx_2_txt.h \
     office_tool.h
 
 FORMS += \
